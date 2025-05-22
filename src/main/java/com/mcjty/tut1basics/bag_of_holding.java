@@ -25,8 +25,8 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Tutorial1Basics.MODID)
-public class Tutorial1Basics {
+@Mod(bag_of_holding.MODID)
+public class bag_of_holding {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "tut1basics";
     // Directly reference a slf4j logger
@@ -42,7 +42,7 @@ public class Tutorial1Basics {
     // Creates a new BlockItem with the id "tut1basics:example_block", combining the namespace and path
     public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block", () -> new BlockItem(EXAMPLE_BLOCK.get(), new Item.Properties()));
 
-    public Tutorial1Basics() {
+    public bag_of_holding() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the commonSetup method for modloading
